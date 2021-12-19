@@ -87,7 +87,6 @@ body {
 /* Tech Stack Section */
 .techstack {
     height: 100%;
-    
 }
 
 .techstack > .image-list {
@@ -110,32 +109,32 @@ body {
 
 /* Projects Section */
 .projects {
-    height: 76vh;
-}
-
-
-
-.projects h3 {
-    margin-top: -30px;
+    height: 100vh;
+    margin-top: 150px;
 }
 
 .projects div {
-    
     display: flex;
     justify-content: space-around;
     width: 90%;
     margin: 20px auto;
 }
+
 .projects > div > .prog-right {
     flex-direction: column;
 }
+
+.projects > .prog-right > h3 {
+    margin-top: -30px;
+}
+
 .projects > div > .prog-left > img {
     object-fit:contain;
     width: 70%;
     margin: 0 auto;
 }
 
-.projects .github {
+.projects > .github {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--btnradius);
@@ -143,13 +142,10 @@ body {
     padding: 20px;
     width: min-content;
 }
-.projects .github:hover {
+.projects > .github:hover {
     background-color: var(--btnhover);
 }
 
-.projects > h2 {
-    margin: 30px 0;
-}
 .projects .github img {
     margin: 0 auto;
     width: 100px;
@@ -161,9 +157,12 @@ body {
     font-weight: bold;
 }
 
-@media screen and (max-width: 1820px) {
+.projects .clear {
+    height: 10px;
+}
 
-    
+/* Mobile View */
+@media screen and (max-width: 1820px) {
     .projects h2 {
         margin-bottom: 50px;
     }
@@ -184,7 +183,6 @@ body {
         grid-template-columns: repeat(2, 0.2fr);
         gap: 10px 100px;
     }
-    
 }
 
 @media screen and (max-width: 500px) { 
