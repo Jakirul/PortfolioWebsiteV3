@@ -187,6 +187,11 @@ body {
 
 @media screen and (max-width: 500px) { 
     .techstack > .image-list {
-        grid-template-columns: repeat(1, 0.2fr);
+        grid-template-columns: repeat(2, 0.2fr);
+        grid-gap: 10px;
+    }
+
+    .techstack > .image-list > img {
+        width: 110px;
     }
 }
